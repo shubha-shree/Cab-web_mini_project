@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- gallery -->
+<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+<!-- //gallery -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner jarallax">
+		
+		<div class="w3-header-bottom">
+			<div class="w3layouts-logo">
+				<h1>
+					<a href="index.html">Go Cab</a>
+				</h1>
+			</div>
+			<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="first-list"><a class="active" href="index.html">Home</a></li>
+									<li><a href="#about" class="scroll">About</a></li>
+									<li><a href="#gallery" class="scroll">Gallery</a></li>
+									<li><a href="#rate" class="scroll">Fare</a></li>
+									<!-- <li><a href="#contact" class="scroll">Contact</a></li> -->
+									<li><a href="log.php">Login</a></li>
+									<li><a href="register.php">Sign Up</a></li>
+									<li><a href="adminlog.php">Admin</a></li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+			</div>
+			<div class="agileinfo-social-grids">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="w3-banner-info">
+					<div class="slider">
+						<div class="callbacks_container">
+							<ul class="rslides callbacks callbacks1" id="slider4">
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3><span>Cab</span></h3>
+										<div class="w3ls-button">
+											<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="w3layouts-banner-info">
+										<h3><span>Go</span></h3>
+										<div class="w3ls-button">
+											<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+									<script>
+										// You can also use "$(window).load(function() {"
+										$(function () {
+										  // Slideshow 4
+										  $("#slider4").responsiveSlides({
+											auto: true,
+											pager:true,
+											nav:false,
+											speed: 400,
+											namespace: "callbacks",
+											before: function () {
+											  $('.events').append("<li>before event fired.</li>");
+											},
+											after: function () {
+											  $('.events').append("<li>after event fired.</li>");
+											}
+										  });
+									
+										});
+									 </script>
+									<!--banner Slider starts Here-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					<h4 class="modal-title">Go Taxi</h4>
+				</div> 
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/4.jpg" alt="" />
+						<p>Online cab booking system will provide people with easy access to transportation facilities anywhere. We have designed two separate platforms, one for the users and another for the drivers. The user platform allows them to book a cab service for any number of people and get the cab to the users current location.
+							We provide cab services to the customers to any part of the city with affordable prices.
+						</p>
+					</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- welcome -->
+	<div class="welcome" id="about">
+		<div class="container">
+			<div class="wthree-heading">
+				<h2>Welcome</h2>
+			</div>
+			<div class="w3-welcome-grids">
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/3.jpg" alt="" />
+						<h4>Global Citizenship</h4>
+						<p>Today's communities face an unprecedented set of challenges. And while technology by itself isn't the solution, when it's done right-and combined with good partnerships-it has the potential to contribute to a better world for all.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/4.jpg" alt="" />
+						<h4>To your service at any time</h4>
+						<p>We provide cab service any time you book a cab to any part of the city.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/5.jpg" alt="" />
+						<h4>Our community to your safety</h4>
+						<p>With every safety feature we add and every standard in our Community Guidelines we uphold, we’re committed to protecting you on the road ahead.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3-welcome-grid">
+					<div class="w3-welcome-grid-info">
+						<img src="images/6.jpg" alt="" />
+						<h4>Affordable price</h4>
+						<p>We provide service at affordable prices so that any customer can make use of the cab</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //welcome -->
+	<!-- about-bottom -->
+	<div class="about-bottom jarallax" id="about">
+		<!-- container -->
+		<div class="container">
+			<div class="wthree-heading about-heading">
+				<h3>About Us</h3>
+			</div>
+			<div class="about-bottom-grids">
+				<div class="col-md-6 about-bottom-left">
+						<p></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="about-bottom-grids w3ls-about-bottom-grids">
+				<div>
+					<h3 style="color:white"><centre>GET A RIDE IN FEW MINUTES !</centre></h3>
+					
+					<p style="color:white">Online cab booking system will provide people with easy access to transportation facilities anywhere at any time. We have designed two separate platforms, one for the users and another for the drivers. The user platform allows them to book a cab service for any number of people and get the cab to the users current location.
+					</p>
+					<p></p>
+					<p style="color:white">We provide cab services to the customers to any part of the city with affordable prices. </p>
+					<p style="color:white">Millions of riders and drivers share a set of Community Guildlines, holding each other accountable to do the right thing.</p>
+					<p style="color:white">A special trained team is available 24/7. Reach them in the app, day or night, with any questions or safety concerns.</p>
+				</div>
+			
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //about-bottom -->
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>Gallery</h3>
+			</div>
+			<div class=" w3-agileits-gallery">
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g1.jpg" class="big"><img src="images/g1.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g2.jpg"><img src="images/g2.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g3.jpg"><img src="images/g3.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g4.jpg"><img src="images/g4.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g5.jpg"><img src="images/g5.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g7.jpg" class="big"><img src="images/g7.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g6.jpg"><img src="images/g6.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g8.jpg"><img src="images/g8.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				
+				<div class="gallery-bg">
+					<div class="gallery-bg-text effect-2">
+						<a href="images/g9.jpg" class="big"><img src="images/g9.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g2.jpg"><img src="images/g2.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g5.jpg"><img src="images/g5.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="gallery-small gallery-middle">
+					<div class="gallery-small-text effect-3">
+						<a href="images/g6.jpg"><img src="images/g6.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/simple-lightbox.js"></script>
+	<script>
+				$(function(){
+					var $gallery = $('.gallery a').simpleLightbox();
+					
+					$gallery.on('show.simplelightbox', function(){
+						console.log('Requested for showing');
+					})
+					.on('shown.simplelightbox', function(){
+						console.log('Shown');
+					})
+					.on('close.simplelightbox', function(){
+						console.log('Requested for closing');
+					})
+					.on('closed.simplelightbox', function(){
+						console.log('Closed');
+					})
+					.on('change.simplelightbox', function(){
+						console.log('Requested for change');
+					})
+					.on('next.simplelightbox', function(){
+						console.log('Requested for next');
+					})
+					.on('prev.simplelightbox', function(){
+						console.log('Requested for prev');
+					})
+					.on('nextImageLoaded.simplelightbox', function(){
+						console.log('Next image loaded');
+					})
+					.on('prevImageLoaded.simplelightbox', function(){
+						console.log('Prev image loaded');
+					})
+					.on('changed.simplelightbox', function(){
+						console.log('Image changed');
+					})
+					.on('nextDone.simplelightbox', function(){
+						console.log('Image changed to next');
+					})
+					.on('prevDone.simplelightbox', function(){
+						console.log('Image changed to prev');
+					})
+					.on('error.simplelightbox', function(e){
+						console.log('No image found, go to the next/prev');
+						console.log(e);
+					});
+				});
+	</script>
+	<!-- //gallery -->
+
+	<!-- blog -->
+	<div id="blog" class="blog">
+		<div class="container">  
+			<div class="wthree-heading">
+				<h3>Blog</h3>
+				
+			</div>
+			<div class="blog-agileinfo">
+				<div class="col-md-6 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/4.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Global Citizenship:</a></h4>
+					<p>Today's communities face an unprecedented set of challenges.</p>
+					
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+			<div class="blog-agileinfo blog-agileinfo-mdl">
+				<div class="col-md-6 blog-w3grid-img blog-img-rght">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/6.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Our community to your safety:</a></h4>
+					<p>With every safety feature we add and every standard in our Community Guidelines we uphold, we’re committed to protecting you on the road ahead.</p>
+					
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+			<div class="blog-agileinfo">
+				<div class="col-md-6 blog-w3grid-img">
+					<a href="#myModal" data-toggle="modal" class="wthree-blogimg">  
+						<img src="images/5.jpg" class="img-responsive" alt=""/>
+					</a>  
+				</div>
+				<div class="col-md-6 blog-w3grid-text"> 
+					<h4><a href="#myModal" data-toggle="modal">Affordable price</a></h4>
+					<p>We provide service at affordable prices so that any customer can make use of the cab</p>
+					
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+		</div>
+	</div>
+	<!-- //blog --> 
+	<!-- fare -->
+	<div class="rate jarallax" id="rate">
+		<div class="container">
+			<div class="wthree-heading about-heading">
+				<h3>Cab Fare</h3>
+			</div>
+			<div class="agileinfo-rate-grids">
+				<div class="agileinfo-rate-grid-nfo">
+						<div class="agileinfo-rate-grid">
+								<ul>
+									<li>Minimum Fare</li>
+									<li>Rs.100</li>
+								</ul>
+						</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>First 30 Min</li>
+							<li>Rs.282</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>More Than 30 Min</li>
+							<li>+Rs.50/KM</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>Out Of City</li>
+							<li>+Rs.50/KM</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>waiting over 10 min</li>
+							<li>Rs.20</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>Baby chair</li>
+							<li>+Rs.30</li>
+						</ul>
+					</div>
+					<div class="agileinfo-rate-grid">
+						<ul>
+							<li>1 animal</li>
+							<li>+Rs.50</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //fare -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="wthree-heading">
+				<h3>Contact Us</h3>
+			</div>
+			<div class="address">
+				<div class="col-sm-4 address-grids">
+					<h4>Address :</h4>
+					<p>Go Cab<br>
+						<span>SCEM ,Adyar</span>
+						Mangalore
+					</p>	
+				</div>
+				<div class="col-sm-4 address-grids">
+					<h4>Phone :</h4>
+					<p>+2 123 456 789</p>
+					<p>+2 987 654 321</p>
+				</div>
+				<div class="col-sm-4 address-grids">
+					<h4>Email :</h4>
+					<p><a href="mailto:example@email.com">mail@example.com</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //contact -->
+	<!-- footer -->
+		<footer>
+			<div class="w3ls-footer-grids">
+				<div class="container">
+					<div class="col-md-3 w3l-footer one">
+						<h3>About Company</h3>
+						<p> SCEM, Adyar</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 w3l-footer one tweet">
+						<h3>Tweets</h3>
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-twitter"></i>Send us your perspective.
+								<i>http//example.com</i></a>
+								<span>About 15 minutes ago<span>
+							</span></span></li>
+							<li>
+								<a href="#"> <i class="fa fa-twitter"></i>Come join us. 
+								<i>http//example.com</i></a>
+								<span>About a day ago<span>
+							</span></span></li>
+						</ul>
+					</div>
+					<div class="col-md-3 w3l-footer two">
+						<h3>Keep Connected</h3>
+						<ul>
+							<li><a class="fb" href="#"><i class="fa fa-facebook"></i>Like us on Facebook</a></li>
+							<li><a class="fb1" href="#"><i class="fa fa-twitter"></i>Follow us on Twitter</a></li>
+							<li><a class="fb2" href="#"><i class="fa fa-google-plus"></i>Add us on Google Plus</a></li>
+							<li><a class="fb3" href="#"><i class="fa fa-dribbble"></i>Follow us on Dribbble</a></li>
+							<li><a class="fb4" href="#"><i class="fa fa-pinterest-p"></i>Follow us on Pinterest</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 w3l-footer three">
+						<h3>Contact Information</h3>
+						<ul>
+							<li><i class="fa fa-map-marker"></i><p>The company name <span>Lorem ipsum dolor,</span>Polo Street. </p><div class="clearfix"></div> </li>
+							<li><i class="fa fa-phone"></i><p>1234567890</p> <div class="clearfix"></div> </li>
+							<li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com">info@example.com</a> <div class="clearfix"></div></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			
+		</footer>
+	<!-- //footer -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>	
+</html>
